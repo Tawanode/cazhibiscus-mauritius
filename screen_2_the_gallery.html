@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallery | Cazhibiscus Boutique B&B Mauritius</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Manrope:wght@500;700&family=EB+Garamond:wght@400&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@100..900&family=Inter:wght@100..900&family=Manrope:wght@100..900&family=Playfair+Display:wght@100..900&display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .masonry-grid {
+            columns: 1;
+            column-gap: 24px;
+        }
+        @media (min-width: 768px) {
+            .masonry-grid {
+                columns: 2;
+            }
+        }
+        @media (min-width: 1024px) {
+            .masonry-grid {
+                columns: 3;
+            }
+        }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 24px;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .tap-highlight-none {
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#9cefff",
+                        "tertiary-fixed-dim": "#d0c5b0",
+                        "tertiary-container": "#4e4737",
+                        "on-secondary-fixed-variant": "#004f58",
+                        "surface": "#f8f9fa",
+                        "outline": "#70787b",
+                        "on-secondary-container": "#006b78",
+                        "secondary-fixed-dim": "#72d5e6",
+                        "surface-container-low": "#f3f4f4",
+                        "surface-dim": "#d9dadb",
+                        "on-primary-fixed": "#001f25",
+                        "surface-bright": "#f8f9fa",
+                        "primary-fixed-dim": "#98cfdd",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#40484a",
+                        "tertiary-fixed": "#ede1cb",
+                        "tertiary": "#373122",
+                        "surface-tint": "#2d6672",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#4d4636",
+                        "secondary-container": "#8aebfd",
+                        "on-tertiary-fixed": "#201b0e",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#bfc8ca",
+                        "inverse-surface": "#2e3132",
+                        "surface-container": "#edeeef",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#0c4e5a",
+                        "on-secondary-fixed": "#001f24",
+                        "primary": "#003741",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#0e4f5b",
+                        "surface-container-highest": "#e1e3e3",
+                        "primary-fixed": "#b3ecfa",
+                        "background": "#f8f9fa",
+                        "on-surface": "#191c1d",
+                        "inverse-primary": "#98cfdd",
+                        "on-background": "#191c1d",
+                        "secondary": "#006875",
+                        "on-primary-container": "#88bfcd",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#e7e8e9",
+                        "on-tertiary-container": "#c0b5a1",
+                        "surface-variant": "#e1e3e3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "24px",
+                        "section-gap": "120px",
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "container-max": "1440px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "nav-link": ["Manrope"],
+                        "body-md": ["Inter"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "display-hero": ["EB Garamond"],
+                        "label-caps": ["Manrope"],
+                        "display-hero-mobile": ["EB Garamond"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                        "nav-link": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "600"}],
+                        "display-hero": ["80px", {"lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "display-hero-mobile": ["48px", {"lineHeight": "54px", "letterSpacing": "-0.01em", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="bg-surface/80 dark:bg-primary/80 backdrop-blur-xl docked full-width top-0 z-50 border-b border-outline-variant/20 shadow-sm sticky">
+<nav class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-medium text-primary dark:text-primary-fixed">Cazhibiscus</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Rooms</a>
+<a class="font-nav-link text-nav-link uppercase tracking-widest text-primary dark:text-primary-fixed border-b border-primary" href="#">Gallery</a>
+<a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Experiences</a>
+<a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">About</a>
+<a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-nav-link text-nav-link uppercase tracking-widest hover:bg-primary-container transition-all duration-300 scale-95 active:scale-90">
+                Book Now
+            </button>
+</nav>
+</header>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="pt-24 pb-16 px-margin-desktop max-w-container-max mx-auto text-center">
+<h1 class="font-display-hero text-display-hero-mobile md:text-display-hero text-primary mb-6">A Visual Sanctuary</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto italic">
+                Journey through the quiet corners and vibrant horizons of our Mauritian hideaway. Every image tells a story of tropical elegance.
+            </p>
+</section>
+<!-- Category Filters -->
+<section class="mb-section-gap px-margin-desktop max-w-container-max mx-auto sticky top-[92px] z-40 bg-surface/80 backdrop-blur-md py-4">
+<div class="flex flex-wrap justify-center gap-4">
+<button class="px-6 py-2 rounded-full font-label-caps text-label-caps border border-primary bg-primary text-on-primary transition-all duration-300 active:scale-95 filter-btn" data-category="all">All Moments</button>
+<button class="px-6 py-2 rounded-full font-label-caps text-label-caps border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary transition-all duration-300 active:scale-95 filter-btn" data-category="beach">Beach</button>
+<button class="px-6 py-2 rounded-full font-label-caps text-label-caps border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary transition-all duration-300 active:scale-95 filter-btn" data-category="rooms">Rooms</button>
+<button class="px-6 py-2 rounded-full font-label-caps text-label-caps border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary transition-all duration-300 active:scale-95 filter-btn" data-category="pool">Pool</button>
+<button class="px-6 py-2 rounded-full font-label-caps text-label-caps border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary transition-all duration-300 active:scale-95 filter-btn" data-category="garden">Garden</button>
+<button class="px-6 py-2 rounded-full font-label-caps text-label-caps border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary transition-all duration-300 active:scale-95 filter-btn" data-category="sunset">Sunset</button>
+<button class="px-6 py-2 rounded-full font-label-caps text-label-caps border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary transition-all duration-300 active:scale-95 filter-btn" data-category="dining">Dining</button>
+</div>
+</section>
+<!-- Gallery Grid -->
+<section class="px-margin-desktop max-w-container-max mx-auto pb-section-gap">
+<div class="masonry-grid" id="gallery-grid">
+<!-- Beach -->
+<div class="masonry-item group cursor-pointer overflow-hidden rounded-[24px]" data-category="beach">
+<div class="relative overflow-hidden aspect-[4/5] bg-surface-container">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" data-alt="A wide shot of a pristine Mauritian beach at noon. Crystal clear turquoise water gently laps against soft white sand. Tall, slender palm trees lean gracefully over the water. The sky is a brilliant, cloudless blue, capturing the essence of a hidden tropical sanctuary with high-end editorial lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1bKUOuajznGK0SirWTTZXZZrak-3hzBh7x64lkk419v8q_0LiFP2lJI4lDs-XlJtvbI4qTVZ8Yss5BDcXxAt_DZC_hp0gYkJ2XzfGX3i_PJiHOkj3kbnEq-gzNqkOziiRJSyMIPreMWzrsYhK6zMTjM8HPjK9stwUQo4r6TfGD_ggpfdUmsF5CG_jhPorHl11cm8gk8AF6aVUQXBCAfDCcl95BO_gWowzjLjX3SMACGJhBKDpak1q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<span class="text-on-primary font-headline-md text-[24px]">Azure Shorelines</span>
+</div>
+</div>
+</div>
+<!-- Rooms -->
+<div class="masonry-item group cursor-pointer overflow-hidden rounded-[24px]" data-category="rooms">
+<div class="relative overflow-hidden aspect-square bg-surface-container">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" data-alt="The interior of a luxury boutique hotel room in Mauritius. High ceilings with dark wood beams, white linen bedding, and artisanal tropical decor. Sunlight filters through woven shutters, creating soft shadows. The atmosphere is quiet and opulent, using a warm sand and deep ocean color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIGCnTS8HOrJmHpJ_KjCGWkL1TGDnZaOMqaIQVRB6yc7DiVQrS08z6CSPrtCmCEKsTL9fyj5quMPe5mBzyugaHp6fcooK8tJguMI4yUVb2y6P6a4fxamnZHa7ovV-J212KmclwLRuYDxOkVAwXQJ7hlhcdAq2JtDKTNnZISgapBAzNM_QFc24KLitDkIiiygKKpiBPjg8CyDze6TM3qdL5njCPYauOlzmF5d0vSr7gDBO_YeZzXES_"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<span class="text-on-primary font-headline-md text-[24px]">Master Sanctuary</span>
+</div>
+</div>
+</div>
+<!-- Pool -->
+<div class="masonry-item group cursor-pointer overflow-hidden rounded-[24px]" data-category="pool">
+<div class="relative overflow-hidden aspect-[3/4] bg-surface-container">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" data-alt="A minimalist infinity pool overlooking the Indian Ocean. The water surface is perfectly still, reflecting the morning sky. Surrounded by natural stone tiling and lush green tropical plants. The style is Apple-inspired minimalism with clean lines and expansive whitespace, emphasizing tranquility and luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9B2IgAM_Mx_iIXYJxqvVo42MWXGSLzg2eB6UVXGInz0zccZAUAD4Ho7uuuN-RRJA-ExmTWGyJz-hbpHsF7_Ec9nSqFTBmpM1j7KPCfOm9RrQLP4asdDMakXISGOVWAkfSSYVFX28lRoYoklpXGAOHPowBZcw-G2V_yOZOWE5bpyz-EJ_kNQAIkP8Xb1T3pALXHQiuFU2SV3MDc0ObgJmc4nzfhrM6ZYYM9L51giezlhquhhE1oUCp"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<span class="text-on-primary font-headline-md text-[24px]">Infinite Stillness</span>
+</div>
+</div>
+</div>
+<!-- Garden -->
+<div class="masonry-item group cursor-pointer overflow-hidden rounded-[24px]" data-category="garden">
+<div class="relative overflow-hidden aspect-[16/9] bg-surface-container">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" data-alt="A lush tropical garden at Cazhibiscus featuring vibrant hibiscus flowers and giant fern leaves. Dappled sunlight hits the foliage, creating a rich texture of greens and pinks. A winding stone path disappears into the greenery. The lighting is soft and environmental, evoking a sense of discovery in a hidden garden." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpyeJkOgXKZzVp9ysPiVxtxFpsdo4IkmtjKWEavX4uy_k-A-iTIjG7T5FLcHFOidGAMFV2f8bIbv-CrrpZa3-y8JNXmYx_HRPY96Zp-_Je3qyZ_8KgT6O0YW2vRneL-_njl8eDOu7243SIEEfQURHYR1kJpVXjaRVQhFklx_GTiwU4-QMRw9bYklEFg5ebQTJOZRXBNzskaTO8HfqatMWNxgGmdfd36lxx6YXUjBthuiLlyGlvNWGd"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<span class="text-on-primary font-headline-md text-[24px]">Tropical Flora</span>
+</div>
+</div>
+</div>
+<!-- Sunset -->
+<div class="masonry-item group cursor-pointer overflow-hidden rounded-[24px]" data-category="sunset">
+<div class="relative overflow-hidden aspect-[4/5] bg-surface-container">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" data-alt="A dramatic Mauritian sunset over the ocean. The sky is filled with deep oranges, purples, and pinks. The silhouette of a lone sailboat is visible on the horizon. The water reflects the vibrant colors of the sky. The mood is romantic and sophisticated, captured with professional editorial travel photography techniques." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM9reAmfqcnMcY-4izh5tyksQzcRXIQDoIIkOknviR7YyCVvZc_Eblg5Nrqchn2laEOzcR3tn_eu8B2IedI1khaWQeK7CMtw4twgHpJ7u1hKOS-ULpEojZ-0W-GymMvI-ALoWFpbQCRT5ju9qP5OsHg1LS4fpEL62J5wCnF0RTc_fcWgErLp8qu8HtomKqvFNFAoE5Zum2YRLj3ZQQhQ1Hp05xa1NLl2i7YONJzxIr3ZoAxfSa58c3"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<span class="text-on-primary font-headline-md text-[24px]">Golden Hour</span>
+</div>
+</div>
+</div>
+<!-- Dining -->
+<div class="masonry-item group cursor-pointer overflow-hidden rounded-[24px]" data-category="dining">
+<div class="relative overflow-hidden aspect-square bg-surface-container">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" data-alt="A beautifully set outdoor dining table under a canopy of stars. Fine white china, crystal glassware, and candlelight. The setting is intimate and private, nestled between tropical trees. The visual style is understated opulence, focusing on the sensory details of a high-end luxury dining experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDHEv9dTDsO-HGgfcFzaF-8zutz7NGsShfpAH_HB1tdKcufzb2JzUq-wL2_PkBxl5biJ0vAyLf6mdX2a8oHB-9TTE8N_suvY7yKn2Wd7V5CYiL-26NNeHq6i7PoZmNpn0W2nhXdmMTrou_1ANf5BzNaq_czTPjfG1-EUSKz7Xegq5_qRQ7OiGnFy3-sfeYJ5k0ex3n7A3xXsM5TbIPA5aIsx-2XoHbw2hETlMmqakEYcjsoKY46257"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<span class="text-on-primary font-headline-md text-[24px]">Island Flavors</span>
+</div>
+</div>
+</div>
+<!-- Extra items for density -->
+<div class="masonry-item group cursor-pointer overflow-hidden rounded-[24px]" data-category="beach">
+<div class="relative overflow-hidden aspect-square bg-surface-container">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" data-alt="Close up of seashells on a white sand beach with soft bokeh ocean background. Gentle morning light illuminates the intricate textures of the shells. The color palette is composed of warm sands and soft lagoon tints, creating a peaceful, tactile atmosphere characteristic of the brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5-mAG1yS1DxbxUDs-KMcdH0R1N2Qww8dhCvFhOWIQxrc2RZNCNGFivBdswuUaHj56POK7qh208Db_Z26IKz9JM56vnrw-56LJ8pOvy10JNgS-u1HshWnE63wFdIQFDJYf3oWgNgWLGRICnlteiUwJFb0jsfgFKhXr7-JnG533lTkpC4fyLMFoOrNJLBCFLH_nJyiXKqwQVI1M0oHaey62um_OxKStFQ8dB8lWjBhUVRLkjyg-gH43"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<span class="text-on-primary font-headline-md text-[24px]">Morning Shore</span>
+</div>
+</div>
+</div>
+<div class="masonry-item group cursor-pointer overflow-hidden rounded-[24px]" data-category="rooms">
+<div class="relative overflow-hidden aspect-[3/4] bg-surface-container">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" data-alt="Detailed shot of a luxury bathroom at Cazhibiscus. A large stone bathtub surrounded by tropical plants. Glassmorphic details on a vanity mirror with soft backlighting. The design is minimalist and clean, using natural materials to create a spa-like sanctuary in a high-end tropical setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1NRLWtfx5dOmb1PEMWqZE4GPJ1bauoRtY0iV6-XDriJ6IdHvD60nVfJlCXJ4k3QOmkctfzVRZnpnRNgy8PmoZSSmNUX_MyCwS09JcD1Lha9Dmuzr4h_A6_z1sB0vkyNdsvH5SLuBMI8mHmJLPmaU_TvJ299vmI0G-Y0aBJ94bmKhMpaoOBsgb5vTWOa9AmImQ8ZEeAmvfSLKyXoMRZoS4Ul1aO9-5ljNF0Lz3gioPnGtOI5_htjvK"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<span class="text-on-primary font-headline-md text-[24px]">The Bathing Ritual</span>
+</div>
+</div>
+</div>
+<div class="masonry-item group cursor-pointer overflow-hidden rounded-[24px]" data-category="sunset">
+<div class="relative overflow-hidden aspect-[16/9] bg-surface-container">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" data-alt="A wide aerial view of the Mauritius coastline at dusk. The reef creates a sharp line between the calm lagoon and the deep ocean. Coastal lights are beginning to twinkle. The scene is majestic and expansive, presented with the authority of an architectural digest photo essay." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLvJLJmcKNNRdKAzQWCe_n5p0DjVPnZYlbSH4HZIBjmWs5WhC8mfYirw3uRJG9FaY9IDvFRXEJPFrcgR7gX81EDXH4A1EnY2np0ZoyayLebHZKs3mAqpomQqHRQoRreBP5_fkIjaGHkmLqmt8Iy63IzJbPtiIWZrSSXcR8MRRFD5K9Ho1YiJ_jCiP14KW3ishkeBoO_5mZwD_7Z87xRjsUPA0JEAHtEJOOXQm1i-wDPTP6uW-bAsQo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<span class="text-on-primary font-headline-md text-[24px]">Coastal Horizons</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile) -->
+<nav class="bg-surface/90 dark:bg-primary/90 backdrop-blur-lg fixed bottom-0 w-full rounded-t-xl z-50 md:hidden border-t border-outline-variant/30 shadow-[0_-4px_20px_rgba(14,79,91,0.08)] flex justify-around items-center h-20 pb-safe px-6">
+<div class="flex flex-col items-center justify-center text-outline transition-all tap-highlight-none">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-caps text-label-caps">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-primary font-bold transition-all tap-highlight-none">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">sailing</span>
+<span class="font-label-caps text-label-caps">Explore</span>
+</div>
+<div class="flex flex-col items-center justify-center text-outline transition-all tap-highlight-none">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-caps text-label-caps">Account</span>
+</div>
+<div class="flex flex-col items-center justify-center text-outline transition-all tap-highlight-none">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="font-label-caps text-label-caps">Book</span>
+</div>
+</nav>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-primary w-full border-t border-outline-variant/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-section-gap px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-2">
+<div class="font-display-hero text-display-hero-mobile text-primary mb-8">Cazhibiscus</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+                    A boutique sanctuary in the heart of Mauritius. Experience the true essence of island life through curated stays and local heritage.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-nav-link text-nav-link uppercase tracking-widest text-primary mb-4">Discover</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-opacity" href="#">Sustainability</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-opacity" href="#">Careers</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-opacity" href="#">Gift Cards</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-nav-link text-nav-link uppercase tracking-widest text-primary mb-4">Legal</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-opacity" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-opacity" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-opacity" href="#">Accessibility</a>
+</div>
+</div>
+<div class="px-margin-desktop py-8 border-t border-outline-variant/10 max-w-container-max mx-auto text-center md:text-left font-body-md text-body-md text-on-surface-variant">
+            © 2024 Cazhibiscus Boutique B&B Mauritius. All rights reserved.
+        </div>
+</footer>
+<!-- Fullscreen Image Viewer (Hidden by default) -->
+<div class="fixed inset-0 z-[100] bg-primary/95 backdrop-blur-2xl flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500" id="image-viewer">
+<button class="absolute top-8 right-8 text-on-primary scale-100 hover:scale-110 active:scale-90 transition-transform" id="close-viewer">
+<span class="material-symbols-outlined text-[40px]">close</span>
+</button>
+<div class="max-w-[90vw] max-h-[870px] overflow-hidden rounded-[24px]">
+<img class="w-full h-full object-contain" id="viewer-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuIs0Cq0p0DOad66Od5_vrdotIius4nEpf000tjz3hgbFI412wfRIOGjpY-GHi7k2IQ4lKkLD-m6zYcuGGeNDAUsI6eX0GI67oYSmscJLJCf6AcHhM8lUYoS_3q1pY_dfZN2qstheJe8OWS75FunL0oWtx_P9EM4RAVHh50SZERspRoXPSsuwsUP8lNhAm1kpJZbP45tMtOCMcop4YcBOStu_AEI522lI2oyBPKiyYOYMD0z5hD6Z6"/>
+</div>
+</div>
+<script>
+        // Filtering Logic
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.masonry-item');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const category = btn.getAttribute('data-category');
+                
+                // Update button styles
+                filterButtons.forEach(b => {
+                    b.classList.remove('bg-primary', 'text-on-primary');
+                    b.classList.add('text-on-surface-variant', 'border-outline-variant');
+                });
+                btn.classList.add('bg-primary', 'text-on-primary');
+                btn.classList.remove('text-on-surface-variant', 'border-outline-variant');
+
+                // Filter items
+                galleryItems.forEach(item => {
+                    if (category === 'all' || item.getAttribute('data-category') === category) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.95)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Viewer Logic
+        const viewer = document.getElementById('image-viewer');
+        const viewerImg = document.getElementById('viewer-img');
+        const closeBtn = document.getElementById('close-viewer');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.querySelector('img');
+                viewerImg.src = img.src;
+                viewer.classList.remove('opacity-0', 'pointer-events-none');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            viewer.classList.add('opacity-0', 'pointer-events-none');
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close on escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeBtn.click();
+        });
+
+        // Hover lift interactions for mobile
+        galleryItems.forEach(item => {
+            item.addEventListener('touchstart', () => {
+                item.classList.add('scale-98');
+            });
+            item.addEventListener('touchend', () => {
+                item.classList.remove('scale-98');
+            });
+        });
+    </script>
+</body></html>

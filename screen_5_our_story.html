@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Story | Cazhibiscus Mauritius</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500&family=Manrope:wght@400;500;700&family=EB+Garamond:ital,wght@0,400;1,400&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@100..900&family=Inter:wght@100..900&family=Manrope:wght@100..900&family=Playfair+Display:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#d9dadb",
+                    "surface-container-highest": "#e1e3e3",
+                    "on-primary-container": "#88bfcd",
+                    "tertiary-fixed": "#ede1cb",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "on-surface-variant": "#40484a",
+                    "tertiary-fixed-dim": "#d0c5b0",
+                    "tertiary": "#373122",
+                    "surface-container": "#edeeef",
+                    "on-secondary-fixed": "#001f24",
+                    "surface-tint": "#2d6672",
+                    "secondary-container": "#8aebfd",
+                    "on-secondary-fixed-variant": "#004f58",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed-dim": "#98cfdd",
+                    "primary-container": "#0e4f5b",
+                    "secondary-fixed": "#9cefff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-background": "#191c1d",
+                    "primary": "#003741",
+                    "outline-variant": "#bfc8ca",
+                    "surface-variant": "#e1e3e3",
+                    "outline": "#70787b",
+                    "inverse-on-surface": "#f0f1f1",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#006875",
+                    "on-tertiary-container": "#c0b5a1",
+                    "inverse-surface": "#2e3132",
+                    "on-primary-fixed-variant": "#0c4e5a",
+                    "surface-container-high": "#e7e8e9",
+                    "secondary-fixed-dim": "#72d5e6",
+                    "on-surface": "#191c1d",
+                    "surface": "#f8f9fa",
+                    "surface-container-low": "#f3f4f4",
+                    "on-secondary-container": "#006b78",
+                    "tertiary-container": "#4e4737",
+                    "inverse-primary": "#98cfdd",
+                    "background": "#f8f9fa",
+                    "on-tertiary-fixed": "#201b0e",
+                    "surface-bright": "#f8f9fa",
+                    "on-tertiary-fixed-variant": "#4d4636",
+                    "primary-fixed": "#b3ecfa",
+                    "on-primary-fixed": "#001f25",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "container-max": "1440px",
+                    "margin-mobile": "24px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "section-gap": "120px"
+            },
+            "fontFamily": {
+                    "display-hero-mobile": ["EB Garamond"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "display-hero": ["EB Garamond"],
+                    "body-lg": ["Inter"],
+                    "nav-link": ["Manrope"],
+                    "headline-lg": ["Playfair Display"],
+                    "label-caps": ["Manrope"],
+                    "headline-md": ["Playfair Display"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "display-hero-mobile": ["48px", {"lineHeight": "54px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "display-hero": ["80px", {"lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "nav-link": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .editorial-image-mask {
+            clip-path: inset(0% 0% 0% 0%);
+            transition: clip-path 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .hover-lift {
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px -20px rgba(14, 79, 91, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl dark:bg-inverse-surface/80 border-b border-outline-variant/20 dark:border-outline/20 shadow-sm dark:shadow-none">
+<nav class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md text-primary dark:text-primary-fixed italic cursor-pointer transition-transform duration-200 active:scale-95" href="#">Cazhibiscus</a>
+<div class="hidden md:flex gap-10">
+<a class="font-nav-link text-nav-link uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">The Retreat</a>
+<a class="font-nav-link text-nav-link uppercase tracking-wider text-primary dark:text-primary-fixed border-b border-primary dark:border-primary-fixed pb-1" href="#">Story</a>
+<a class="font-nav-link text-nav-link uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Sustainability</a>
+<a class="font-nav-link text-nav-link uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Journal</a>
+<a class="font-nav-link text-nav-link uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Contact</a>
+</div>
+<button class="px-8 py-3 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-widest rounded-full hover:opacity-80 transition-opacity duration-300 cursor-pointer active:scale-95">
+                Book Now
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[921px] min-h-[700px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A cinematic, high-end editorial portrait of a sophisticated couple, Sarah and Olivier, standing together in the sun-drenched gardens of a tropical Mauritian estate. The lighting is golden hour, warm and soft, casting long shadows. They are dressed in light linen fabrics, looking serene and welcoming against a backdrop of lush palm fronds and a glimpse of the deep ocean lagoon. The color palette is rich with deep greens, ocean blues, and warm sand tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMyZk1C91cEUP78dRzKsU2KATXWAVxJEdth-7o5Uxw3aZzi-lAfmHEpDEJQoWk4aVOi_qKIfMlrbV9uChy1EDVExyyj09SU6VfRkqtquLkOEpAQL1a413iDcC3VEs5WhXXGowZYKZNNz7vTQf8egtcdTxD3X7jpSevZq7R6yvR8N5wFr4oW4v8OgQ6pLMtwU49Kv6hgFxUlQJ9QTqHH0hreubSESm9LbQq0182qurAdSPFDKWEGlQR"/>
+<div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+</div>
+<div class="relative z-10 text-center text-on-primary px-margin-mobile">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.4em] mb-6 block reveal-on-scroll">Our Story</span>
+<h1 class="font-display-hero text-display-hero-mobile md:text-display-hero italic leading-tight reveal-on-scroll">A Legacy of Slow Living</h1>
+</div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 text-on-primary/60 flex flex-col items-center gap-2 animate-bounce">
+<span class="font-label-caps text-[10px] uppercase tracking-widest">Explore</span>
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</section>
+<!-- Meet Your Hosts Section -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<div class="grid md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 reveal-on-scroll">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-8">Meet Sarah & Olivier</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6 leading-relaxed">
+                        It began as a whispered dream between the banyan trees. Sarah, an artist with a soul for Mauritian heritage, and Olivier, a former chef seeking the quietude of the lagoon, envisioned more than just a boutique hotel.
+                    </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+                        They sought to build a sanctuary where time is measured by the tide rather than the clock. Every corner of Cazhibiscus reflects their personal touch—from the hand-picked artisanal pottery to the secret garden paths designed for morning reflection.
+                    </p>
+<div class="flex items-center gap-4 italic font-display-hero text-headline-md text-secondary">
+<span>S. & O.</span>
+</div>
+</div>
+<div class="md:col-span-6 md:col-start-7 relative reveal-on-scroll">
+<div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A vertical, atmospheric shot of the hosts, Sarah and Olivier, laughing in their outdoor kitchen. The environment is a rustic-modern hybrid with polished concrete, warm wood accents, and hanging plants. Soft morning sunlight filters through wooden slats. The scene feels authentic, warm, and deeply personal, emphasizing the 'Hidden Sanctuary' vibe of the boutique B&B." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt9GSpb70t4pWFuXJtichGcdzAFsuI4KDKU63J_xkbLTYXo78SsCyISXYOyTSW7lFGBAI1PuXPz-e4NHWpaH_dFiCh3PKRKXeHhSYfR-Rp4zJyj6ajy5hbNw3LSxbypPOxYigbpY7oYC_65sFya5FPtooaYmPG9_NAnUoOpxBIYQLac6-YKvguYh54XX5pX4gwbBt4odEfHaycWih--QFmSUmnxq_Z4cgiRNAku2XK2St3ET6Ixpcf"/>
+</div>
+<div class="absolute -bottom-8 -left-8 glass-panel p-8 rounded-2xl max-w-[280px] hidden lg:block">
+<p class="font-body-md text-primary italic">"We wanted to share the Mauritius we fell in love with—the quiet, the salt, and the slow rhythm of the island."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Boutique Philosophy: Three Columns -->
+<section class="py-section-gap bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-24 reveal-on-scroll">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Our Core Philosophy</h2>
+<div class="w-24 h-px bg-outline-variant mx-auto"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-16">
+<!-- Column 1 -->
+<div class="flex flex-col items-center text-center reveal-on-scroll">
+<div class="w-16 h-16 rounded-full bg-primary-container/10 flex items-center justify-center text-primary mb-8">
+<span class="material-symbols-outlined text-4xl">bed</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Intimate Comfort</h3>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+                            With only six curated suites, we ensure an atmosphere of exclusive tranquility. Every fabric is organic linen, every scent is distilled from local blooms, designed to cradle you in barefoot luxury.
+                        </p>
+</div>
+<!-- Column 2 -->
+<div class="flex flex-col items-center text-center reveal-on-scroll" style="transition-delay: 100ms">
+<div class="w-16 h-16 rounded-full bg-primary-container/10 flex items-center justify-center text-primary mb-8">
+<span class="material-symbols-outlined text-4xl">restaurant</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Island Flavors</h3>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+                            Olivier’s kitchen follows the 'Garden-to-Gourmet' ethos. We harvest our own hibiscus, vanilla, and tropical fruits, creating a daily menu that honors Mauritian traditions with a modern, refined edge.
+                        </p>
+</div>
+<!-- Column 3 -->
+<div class="flex flex-col items-center text-center reveal-on-scroll" style="transition-delay: 200ms">
+<div class="w-16 h-16 rounded-full bg-primary-container/10 flex items-center justify-center text-primary mb-8">
+<span class="material-symbols-outlined text-4xl">spa</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Slow Living</h3>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+                            Unplugging is our ultimate amenity. We encourage guests to leave their devices behind and reconnect with the simple joys—a sunrise swim, a shared story, or the rustle of palms.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Sustainability Section -->
+<section class="py-section-gap overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid md:grid-cols-2 gap-section-gap items-center">
+<div class="order-2 md:order-1 relative reveal-on-scroll">
+<div class="rounded-3xl overflow-hidden aspect-square relative z-10 shadow-xl">
+<img class="w-full h-full object-cover" data-alt="A high-resolution, ethereal macro shot of turquoise lagoon water with sunlight dappling on a healthy coral reef. The image transitions into a clean, minimalist shot of solar panels subtly integrated into a traditional thatched roof. The aesthetic is clean, eco-conscious, and high-end, utilizing a palette of emerald greens, deep lagoon blues, and soft sun-bleached wood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa3x02UQRboyGxZclF2f4KydREsCv6Z2nSId-S4BmolKL49TUa_Gszd47da8AloawiGHJhmb15xcVC4gaqG2vR4F3z_uXVpBEjUoOrz1oadg-vOHOuJE0Wc-m4OgT_1NjaVLlv9Bx_dh3tCbxynjVAVXtloByPsrAHtha9HZ1yb0z7zo_z0_ZRwY6YoSiFAWe8qhwcpBvIVRnnGO2YGFx88DzL5CFLqaHZ65J7aFA13IcYb2TAHejk"/>
+</div>
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl -z-10"></div>
+</div>
+<div class="order-1 md:order-2 reveal-on-scroll">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-6 block">Our Commitment</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-8">Respect for the Lagoon & Island</h2>
+<div class="space-y-10">
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-secondary pt-1">eco</span>
+<div>
+<h4 class="font-label-caps text-label-caps uppercase text-primary mb-2">Zero-Waste Mindset</h4>
+<p class="font-body-md text-on-surface-variant">We operate a plastic-free sanctuary, from our composting kitchen to our refillable botanical amenities.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-secondary pt-1">water_drop</span>
+<div>
+<h4 class="font-label-caps text-label-caps uppercase text-primary mb-2">Coral Restoration</h4>
+<p class="font-body-md text-on-surface-variant">A portion of every stay funds our local reef nursery, helping protect the vibrant life of our Mauritius lagoon.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-secondary pt-1">wb_sunny</span>
+<div>
+<h4 class="font-label-caps text-label-caps uppercase text-primary mb-2">Solar Energy</h4>
+<p class="font-body-md text-on-surface-variant">Harnessing the Mauritian sun, our retreat is powered by 100% renewable energy systems tucked discreetly out of sight.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Guests Return Section (Testimonials) -->
+<section class="py-section-gap bg-primary text-on-primary">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-16 reveal-on-scroll">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg italic mb-4">Why the Heart Returns</h2>
+<p class="font-body-lg text-on-primary/70">Reflections from our cherished guests.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-gutter items-center">
+<div class="space-y-12 reveal-on-scroll">
+<blockquote class="border-l-4 border-secondary-fixed pl-8">
+<p class="font-display-hero text-headline-md italic mb-4">"Cazhibiscus isn't just a place to stay; it's a place to remember how to breathe. Sarah and Olivier's warmth is the true heart of this sanctuary."</p>
+<cite class="font-label-caps text-label-caps uppercase tracking-widest text-on-primary/60">— Julian & Elena, London</cite>
+</blockquote>
+<blockquote class="border-l-4 border-secondary-fixed pl-8">
+<p class="font-display-hero text-headline-md italic mb-4">"Waking up to the smell of Olivier's freshly baked bread and the sight of the lagoon through the palms... it was like a dream we didn't want to wake from."</p>
+<cite class="font-label-caps text-label-caps uppercase tracking-widest text-on-primary/60">— Marcus V., Paris</cite>
+</blockquote>
+</div>
+<div class="reveal-on-scroll">
+<div class="aspect-[16/10] rounded-3xl overflow-hidden shadow-2xl hover-lift">
+<img class="w-full h-full object-cover" data-alt="A wide-angle, evocative landscape of the Cazhibiscus property at twilight. The architecture is illuminated by soft, warm interior lights, glowing against the deep indigo of the Mauritian night sky. A fire pit is lit on the sand, with its orange glow reflecting in the calm lagoon water. The mood is profoundly peaceful, luxurious, and inviting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXf_YQBOv2skXIFAcfbEhCIx9ddQqb0vx1TH_BasYvvEGaKtvr_qFaepAH7CW73AfPCo16DaA9hL5HWPYerqL8L41cUbrKiZUd1nNLV6LAAb8gFNGOukJiHgS8KwFtWNw4-6cVzwO3Hp3nVrhbMIiavvVQRger98MBRzlbmTzxJ7GL2RHV3JzT0AdUC0xChEiJWMHpcGNwRVimsAdIpcF1QR0ZFYRf8maO3OUS8I1lC6ZykinGqyvp"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-section-gap text-center px-margin-mobile">
+<div class="reveal-on-scroll max-w-2xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg mb-8">Ready to write your own chapter?</h2>
+<p class="font-body-lg text-on-surface-variant mb-12 leading-relaxed">Join us in our hidden corner of paradise and experience the art of slow living firsthand.</p>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<button class="px-10 py-5 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-widest rounded-full hover:opacity-90 transition-all duration-300 transform active:scale-95">Explore Our Suites</button>
+<button class="px-10 py-5 border border-primary text-primary font-label-caps text-label-caps uppercase tracking-widest rounded-full hover:bg-primary/5 transition-all duration-300 transform active:scale-95">Book Your Retreat</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-high w-full py-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-start px-margin-desktop w-full max-w-container-max mx-auto gap-gutter">
+<div class="max-w-xs">
+<h2 class="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed mb-6 italic">Cazhibiscus</h2>
+<p class="font-body-md text-on-surface-variant mb-8 leading-relaxed">A hidden sanctuary in the heart of Mauritius, where luxury meets the slow rhythm of the lagoon.</p>
+<div class="flex gap-6">
+<a class="text-secondary hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">face_nod</span></a>
+<a class="text-secondary hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">camera</span></a>
+<a class="text-secondary hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">pin_drop</span></a>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-16">
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps uppercase text-primary mb-2">Explore</span>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-all duration-300" href="#">The Retreat</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Story</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Journal</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps uppercase text-primary mb-2">About</span>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Privacy Policy</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Sustainability</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Press Kit</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps uppercase text-primary mb-2">Contact</span>
+<p class="font-body-md text-on-surface-variant">Anse La Raie,<br/>Mauritius</p>
+<p class="font-body-md text-on-surface-variant">+230 555 0123</p>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop mt-20 pt-8 border-t border-outline-variant/20">
+<p class="font-body-md text-body-md text-on-surface dark:text-on-surface opacity-60">© 2024 Cazhibiscus Mauritius. A Hidden Sanctuary.</p>
+</div>
+</footer>
+<script>
+        // Reveal on scroll micro-interaction
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+
+        // Sticky nav transition
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-2');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.add('py-4');
+                header.classList.remove('py-2');
+            }
+        });
+    </script>
+</body></html>

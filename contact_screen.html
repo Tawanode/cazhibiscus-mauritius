@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | Cazhibiscus Mauritius</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Inter:wght@300;400;500&amp;family=Manrope:wght@400;500;600;700&amp;family=EB+Garamond:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#d9dadb",
+                    "surface-container-highest": "#e1e3e3",
+                    "on-primary-container": "#88bfcd",
+                    "tertiary-fixed": "#ede1cb",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "on-surface-variant": "#40484a",
+                    "tertiary-fixed-dim": "#d0c5b0",
+                    "tertiary": "#373122",
+                    "surface-container": "#edeeef",
+                    "on-secondary-fixed": "#001f24",
+                    "surface-tint": "#2d6672",
+                    "secondary-container": "#8aebfd",
+                    "on-secondary-fixed-variant": "#004f58",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed-dim": "#98cfdd",
+                    "primary-container": "#0e4f5b",
+                    "secondary-fixed": "#9cefff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-background": "#191c1d",
+                    "primary": "#003741",
+                    "outline-variant": "#bfc8ca",
+                    "surface-variant": "#e1e3e3",
+                    "outline": "#70787b",
+                    "inverse-on-surface": "#f0f1f1",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#006875",
+                    "on-tertiary-container": "#c0b5a1",
+                    "inverse-surface": "#2e3132",
+                    "on-primary-fixed-variant": "#0c4e5a",
+                    "surface-container-high": "#e7e8e9",
+                    "secondary-fixed-dim": "#72d5e6",
+                    "on-surface": "#191c1d",
+                    "surface": "#f8f9fa",
+                    "surface-container-low": "#f3f4f4",
+                    "on-secondary-container": "#006b78",
+                    "tertiary-container": "#4e4737",
+                    "inverse-primary": "#98cfdd",
+                    "background": "#f8f9fa",
+                    "on-tertiary-fixed": "#201b0e",
+                    "surface-bright": "#f8f9fa",
+                    "on-tertiary-fixed-variant": "#4d4636",
+                    "primary-fixed": "#b3ecfa",
+                    "on-primary-fixed": "#001f25",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "container-max": "1440px",
+                    "margin-mobile": "24px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "section-gap": "120px"
+            },
+            "fontFamily": {
+                    "display-hero-mobile": ["EB Garamond"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "display-hero": ["EB Garamond"],
+                    "body-lg": ["Inter"],
+                    "nav-link": ["Manrope"],
+                    "headline-lg": ["Playfair Display"],
+                    "label-caps": ["Manrope"],
+                    "headline-md": ["Playfair Display"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "display-hero-mobile": ["48px", {"lineHeight": "54px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "display-hero": ["80px", {"lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "nav-link": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        .text-shadow-sm {
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/20 shadow-sm">
+<div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md text-primary italic">Cazhibiscus</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-nav-link text-nav-link uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">The Retreat</a>
+<a class="font-nav-link text-nav-link uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Story</a>
+<a class="font-nav-link text-nav-link uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Sustainability</a>
+<a class="font-nav-link text-nav-link uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Journal</a>
+<a class="font-nav-link text-nav-link uppercase tracking-wider text-primary border-b border-primary pb-1" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-nav-link text-nav-link uppercase tracking-widest hover:opacity-80 transition-all active:scale-95">
+                Book Now
+            </button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Section 1: Hero -->
+<section class="px-margin-desktop max-w-container-max mx-auto mb-section-gap overflow-hidden">
+<div class="relative grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-6 z-10">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest mb-4 block">GREETINGS FROM TROU AUX BICHES</span>
+<h1 class="font-display-hero text-display-hero text-primary leading-tight mb-8">Get in Touch</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        Whether you're seeking a quiet escape or have specific requirements for your Mauritian getaway, we are here to ensure your journey is seamless.
+                    </p>
+</div>
+<div class="md:col-span-6 relative h-[500px] rounded-[32px] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="A serene wide-angle photograph of a lush tropical garden path in Mauritius during golden hour. The light is soft and warm, illuminating vibrant hibiscus flowers and tall palm trees against a clear turquoise sky. The atmosphere is peaceful, luxury boutique aesthetic, with deep greens and warm sandy tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCd4mKCWTQDU8LG5WWaCiEUp5pJ6pJa3nBZltS-KIOswM-Vyrw04EemvU4uf-2FSCHo7jCdTEuBC5XA6kuzYn8NoZ2641D1p4VnpHTavA7rRa-m9WfXSPxlNgpCZnyz6L-_V07WCkJy92Cp0S8k5wSGyTtbGe9knt4ZrCGz0W2b8yb0Wh4ZQvp_XKzedUpMWwMrszoMlD5chjdb3E_Jt-1exRMbrBRp8tCmtEbdN_MxlwDjtZPWnaZn')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Section 2: Direct Channels (Bento-style Glassmorphism) -->
+<section class="px-margin-desktop max-w-container-max mx-auto mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- WhatsApp -->
+<div class="glass-card p-8 rounded-[24px] shadow-sm hover:shadow-md transition-shadow group cursor-pointer">
+<div class="flex justify-between items-start mb-6">
+<div class="p-3 bg-secondary-container rounded-xl text-on-secondary-container group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+</div>
+<span class="flex items-center gap-2 font-label-caps text-[10px] text-secondary py-1 px-3 bg-secondary-fixed/30 rounded-full">
+<span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
+                            LIVE NOW
+                        </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">WhatsApp</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Quick responses for availability and local tips.</p>
+<span class="font-nav-link text-nav-link text-primary font-bold tracking-wide group-hover:underline">+230 5550 1234</span>
+</div>
+<!-- Email -->
+<div class="glass-card p-8 rounded-[24px] shadow-sm hover:shadow-md transition-shadow group cursor-pointer">
+<div class="flex justify-between items-start mb-6">
+<div class="p-3 bg-tertiary-fixed rounded-xl text-on-tertiary-fixed group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mail</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Inquiries</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">For detailed bookings and group retreats.</p>
+<span class="font-nav-link text-nav-link text-primary font-bold tracking-wide group-hover:underline">hello@cazhibiscus.mu</span>
+</div>
+<!-- Phone -->
+<div class="glass-card p-8 rounded-[24px] shadow-sm hover:shadow-md transition-shadow group cursor-pointer">
+<div class="flex justify-between items-start mb-6">
+<div class="p-3 bg-primary-fixed rounded-xl text-on-primary-fixed group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Direct Line</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Speak with our concierge directly at the house.</p>
+<span class="font-nav-link text-nav-link text-primary font-bold tracking-wide group-hover:underline">+230 263 1234</span>
+</div>
+</div>
+</section>
+<!-- Section 3: Contact Form -->
+<section class="bg-tertiary-fixed/30 py-section-gap px-margin-desktop">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-section-gap items-start">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Send a Message</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-md">
+                        Drop us a note using the form below. Our family usually responds within a few hours during local daylight times.
+                    </p>
+<div class="space-y-8">
+<div class="flex gap-4 items-center">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<div>
+<p class="font-label-caps text-label-caps text-primary">OFFICE HOURS</p>
+<p class="font-body-md text-body-md">08:00 — 20:00 (MUT)</p>
+</div>
+</div>
+</div>
+</div>
+<form class="space-y-8 bg-surface p-12 rounded-[32px] shadow-xl shadow-primary-container/5">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="relative group">
+<input class="peer w-full bg-transparent border-0 border-b border-outline-variant py-2 focus:ring-0 focus:border-primary transition-all font-body-md text-on-surface" id="name" placeholder=" " type="text"/>
+<label class="absolute left-0 top-2 -translate-y-6 text-label-caps text-on-surface-variant transition-all peer-placeholder-shown:translate-y-0 peer-placeholder-shown:text-body-md peer-focus:-translate-y-6 peer-focus:text-label-caps peer-focus:text-primary" for="name">FULL NAME</label>
+</div>
+<div class="relative group">
+<input class="peer w-full bg-transparent border-0 border-b border-outline-variant py-2 focus:ring-0 focus:border-primary transition-all font-body-md text-on-surface" id="email" placeholder=" " type="email"/>
+<label class="absolute left-0 top-2 -translate-y-6 text-label-caps text-on-surface-variant transition-all peer-placeholder-shown:translate-y-0 peer-placeholder-shown:text-body-md peer-focus:-translate-y-6 peer-focus:text-label-caps peer-focus:text-primary" for="email">EMAIL ADDRESS</label>
+</div>
+</div>
+<div class="relative group">
+<select class="peer w-full bg-transparent border-0 border-b border-outline-variant py-2 focus:ring-0 focus:border-primary transition-all font-body-md text-on-surface appearance-none" id="subject">
+<option value="">Select a topic</option>
+<option value="booking">New Booking</option>
+<option value="concierge">Concierge Services</option>
+<option value="feedback">Feedback</option>
+<option value="other">Other Inquiry</option>
+</select>
+<label class="absolute left-0 -translate-y-6 text-label-caps text-on-surface-variant transition-all" for="subject">SUBJECT</label>
+</div>
+<div class="relative group">
+<textarea class="peer w-full bg-transparent border-0 border-b border-outline-variant py-2 focus:ring-0 focus:border-primary transition-all font-body-md text-on-surface resize-none" id="message" placeholder=" " rows="4"></textarea>
+<label class="absolute left-0 top-2 -translate-y-6 text-label-caps text-on-surface-variant transition-all peer-placeholder-shown:translate-y-0 peer-placeholder-shown:text-body-md peer-focus:-translate-y-6 peer-focus:text-label-caps peer-focus:text-primary" for="message">HOW CAN WE HELP?</label>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 rounded-xl font-nav-link text-nav-link uppercase tracking-widest hover:bg-primary/90 transition-all flex justify-center items-center gap-3" type="submit">
+                        Send Message
+                        <span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</form>
+</div>
+</section>
+<!-- Section 4: Location Explorer -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Find us in Trou aux Biches</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Located on the pristine north coast, just steps from the turquoise lagoon.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter h-[600px]">
+<div class="md:col-span-8 relative rounded-[32px] overflow-hidden shadow-lg border border-outline-variant/10">
+<div class="w-full h-full bg-cover bg-center" data-alt="A stylized, minimal map view of the Trou aux Biches area in Mauritius. The map features a clean, light-mode palette with soft teal highlights for water and warm sand tones for land. Key points of interest are marked with elegant icons, focusing on the coastal sanctuary of Cazhibiscus." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC9TM2fDMMQgNOMBa1IoBcNiSdtAfj5WbjkBaJOXG2y3GV2mgG1YYQCm1vThU3Jn5jv-2Dr5o2WX-vR0XKisiI9YIui_fzvqO9WEGBhtHemgacuRZAnTKYwvqQy_LfIpdlbhFF7Z9JyQK-Kt67Ucms1qT6ZVwMwxIHgBXzaVJM_vOGAjc1tAiQVAe7DQDAsoBYYQnBcSORhVIwa-VBFvXW001U1TMhdgTx9cn6KDXERdCJHaLMXGSny')"></div>
+<div class="absolute bottom-6 left-6 glass-card p-4 rounded-2xl flex items-center gap-4">
+<div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined">directions_car</span>
+</div>
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant">FROM AIRPORT (MRU)</p>
+<p class="font-body-md font-bold text-primary">1h 15m drive</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 flex flex-col gap-gutter">
+<div class="flex-1 glass-card p-8 rounded-[32px] flex flex-col justify-center">
+<span class="material-symbols-outlined text-primary mb-4 text-[32px]">pin_drop</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Address</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                            B1, Coastal Road<br/>
+                            Trou aux Biches<br/>
+                            Mauritius, 22312
+                        </p>
+</div>
+<div class="flex-1 bg-primary text-on-primary p-8 rounded-[32px] flex flex-col justify-center">
+<h4 class="font-headline-md text-headline-md text-on-primary mb-4">Effortless Arrival</h4>
+<p class="font-body-md text-body-md opacity-80 mb-6">
+                            We offer private BMW 7-Series transfers directly from Sir Seewoosagur Ramgoolam International Airport.
+                        </p>
+<button class="flex items-center gap-2 font-label-caps text-label-caps border-b border-on-primary w-fit pb-1 hover:opacity-70 transition-opacity">
+                            BOOK A TRANSFER
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Quick Answers (FAQ) -->
+<section class="py-section-gap px-margin-desktop max-w-3xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-12">Quick Answers</h2>
+<div class="space-y-4">
+<!-- FAQ Item 1 -->
+<div class="border-b border-outline-variant/30 overflow-hidden">
+<button class="faq-toggle w-full flex justify-between items-center py-6 text-left group">
+<span class="font-headline-md text-[24px] text-primary group-hover:text-secondary transition-colors">What are the check-in times?</span>
+<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+<p class="font-body-md text-body-md text-on-surface-variant pb-8">
+                            Check-in is from 14:00 and check-out is at 11:00. We offer early arrival and late departure subject to availability; please contact us 24 hours in advance.
+                        </p>
+</div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="border-b border-outline-variant/30 overflow-hidden">
+<button class="faq-toggle w-full flex justify-between items-center py-6 text-left group">
+<span class="font-headline-md text-[24px] text-primary group-hover:text-secondary transition-colors">Is breakfast included?</span>
+<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+<p class="font-body-md text-body-md text-on-surface-variant pb-8">
+                            Yes, a curated Mauritian continental breakfast is served daily in the Hibiscus Garden from 07:30 to 10:30, featuring local fruits and artisanal pastries.
+                        </p>
+</div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="border-b border-outline-variant/30 overflow-hidden">
+<button class="faq-toggle w-full flex justify-between items-center py-6 text-left group">
+<span class="font-headline-md text-[24px] text-primary group-hover:text-secondary transition-colors">Do you provide beach equipment?</span>
+<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+<p class="font-body-md text-body-md text-on-surface-variant pb-8">
+                            Complimentary snorkeling gear, paddleboards, and luxury beach towels are available for all guests. We can also arrange private boat charters upon request.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-high w-full py-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-start px-margin-desktop w-full max-w-container-max mx-auto gap-gutter">
+<div class="mb-12 md:mb-0">
+<div class="font-headline-lg text-headline-lg text-primary mb-4">Cazhibiscus</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                    A hidden tropical sanctuary in the heart of Trou aux Biches, Mauritius.
+                </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-2 gap-16">
+<div>
+<h5 class="font-label-caps text-label-caps text-primary mb-6">EXPLORE</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline-offset-4 transition-all" href="#">The Retreat</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline-offset-4 transition-all" href="#">Sustainability</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline-offset-4 transition-all" href="#">Journal</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-caps text-label-caps text-primary mb-6">LEGAL</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline-offset-4 transition-all" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline-offset-4 transition-all" href="#">Sustainability Charter</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline-offset-4 transition-all" href="#">Press Kit</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop w-full max-w-container-max mx-auto mt-24 pt-8 border-t border-outline-variant/20">
+<p class="font-body-md text-body-md text-on-surface-variant/60 text-sm">
+                © 2024 Cazhibiscus Mauritius. A Hidden Sanctuary.
+            </p>
+</div>
+</footer>
+<script>
+        // Simple Accordion Logic
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('.material-symbols-outlined');
+                
+                // Close others
+                document.querySelectorAll('.faq-content').forEach(other => {
+                    if (other !== content) {
+                        other.style.maxHeight = null;
+                        other.previousElementSibling.querySelector('.material-symbols-outlined').style.transform = 'rotate(0deg)';
+                    }
+                });
+
+                // Toggle current
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+
+        // Form placeholder micro-interaction (already handled by peer classes in CSS)
+    </script>
+</body></html>

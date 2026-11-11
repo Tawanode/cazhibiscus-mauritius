@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Experiences | Cazhibiscus Boutique B&amp;B Mauritius</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;family=Manrope:wght@500;700&amp;family=EB+Garamond:wght@400&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@100..900&amp;family=Inter:wght@100..900&amp;family=Manrope:wght@100..900&amp;family=Playfair+Display:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .horizontal-card-shadow {
+            box-shadow: 0 10px 40px -10px rgba(14, 79, 91, 0.1);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#9cefff",
+                        "tertiary-fixed-dim": "#d0c5b0",
+                        "tertiary-container": "#4e4737",
+                        "on-secondary-fixed-variant": "#004f58",
+                        "surface": "#f8f9fa",
+                        "outline": "#70787b",
+                        "on-secondary-container": "#006b78",
+                        "secondary-fixed-dim": "#72d5e6",
+                        "surface-container-low": "#f3f4f4",
+                        "surface-dim": "#d9dadb",
+                        "on-primary-fixed": "#001f25",
+                        "surface-bright": "#f8f9fa",
+                        "primary-fixed-dim": "#98cfdd",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#40484a",
+                        "tertiary-fixed": "#ede1cb",
+                        "tertiary": "#373122",
+                        "surface-tint": "#2d6672",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#4d4636",
+                        "secondary-container": "#8aebfd",
+                        "on-tertiary-fixed": "#201b0e",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#bfc8ca",
+                        "inverse-surface": "#2e3132",
+                        "surface-container": "#edeeef",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#0c4e5a",
+                        "on-secondary-fixed": "#001f24",
+                        "primary": "#003741",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#0e4f5b",
+                        "surface-container-highest": "#e1e3e3",
+                        "primary-fixed": "#b3ecfa",
+                        "background": "#f8f9fa",
+                        "on-surface": "#191c1d",
+                        "inverse-primary": "#98cfdd",
+                        "on-background": "#191c1d",
+                        "secondary": "#006875",
+                        "on-primary-container": "#88bfcd",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#e7e8e9",
+                        "on-tertiary-container": "#c0b5a1",
+                        "surface-variant": "#e1e3e3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "24": "24px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "24px",
+                        "section-gap": "120px",
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "container-max": "1440px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "nav-link": ["Manrope"],
+                        "body-md": ["Inter"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "display-hero": ["EB Garamond"],
+                        "label-caps": ["Manrope"],
+                        "display-hero-mobile": ["EB Garamond"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                        "nav-link": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "600"}],
+                        "display-hero": ["80px", {"lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "display-hero-mobile": ["48px", {"lineHeight": "54px", "letterSpacing": "-0.01em", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="bg-surface/80 dark:bg-primary/80 backdrop-blur-xl border-b border-outline-variant/20 shadow-sm fixed top-0 left-0 w-full z-50">
+<div class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto">
+<span class="font-headline-md text-headline-md font-medium text-primary dark:text-primary-fixed">Cazhibiscus</span>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Rooms</a>
+<a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Gallery</a>
+<a class="font-nav-link text-nav-link uppercase tracking-widest text-primary dark:text-primary-fixed border-b border-primary" href="#">Experiences</a>
+<a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">About</a>
+<a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-nav-link text-nav-link uppercase tracking-widest scale-95 active:scale-90 transition-all hover:bg-primary-container">
+                Book Now
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-[819px] flex items-end pb-32 px-margin-desktop overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-surface/80 via-transparent to-transparent z-10"></div>
+<div class="w-full h-full bg-cover bg-center scale-105 animate-[pulse_8s_infinite]" data-alt="A cinematic, high-angle wide shot of a turquoise Mauritian lagoon with a solitary white catamaran sailing under a soft golden hour sun. The lighting is ethereal and warm, capturing the essence of luxury island living. The color palette features deep primary ocean blues and warm sand tones, reflecting a high-end editorial travel magazine aesthetic with a serene, minimalist mood." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDSpeNwNS-aw8m69E3qLDeYx51Bpn_G093-u9nK0lXv-Duo-sLVGuUfo9o2JHQs-ujiZX8ttuxVQCYaIKbTne05YTFKnbFZ-Xurph1GSOHyuHxd3PSkgSxznoqDCpffy0fZ0zDKO1VFcC7d-KJ-osHKO6kfeosXumfOIgu-hP5oAwa2pPtfxOhYQXIB1Md14-j0838z7tE5x9sKFPn_UeKOS4WjKFBEny0kLYbvRF0WMeRZ6tRqZhgD')"></div>
+</div>
+<div class="relative z-20 max-w-4xl">
+<span class="font-label-caps text-label-caps text-primary tracking-[0.3em] uppercase block mb-4">Curated Moments</span>
+<h1 class="font-display-hero text-display-hero-mobile md:text-display-hero text-primary italic leading-none mb-8">
+                The Art of <br/> Mauritian Living
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                From the depths of the Indian Ocean to the rhythmic soul of Creole flavors, discover a sanctuary where time dissolves and memories crystallize.
+            </p>
+</div>
+</header>
+<!-- Experiences Horizontal Scroll -->
+<section class="py-section-gap">
+<div class="px-margin-desktop mb-12 flex justify-between items-end">
+<div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Signature Activities</h2>
+<p class="text-on-surface-variant mt-2 font-body-md">Swipe to explore our curated selection of island pursuits.</p>
+</div>
+<div class="hidden md:flex gap-4">
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" onclick="scrollLeftExp()">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" onclick="scrollRightExp()">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="flex overflow-x-auto gap-8 px-margin-desktop hide-scrollbar snap-x snap-mandatory" id="experience-scroll">
+<!-- Snorkeling -->
+<div class="flex-none w-[85vw] md:w-[450px] snap-start group">
+<div class="relative h-[600px] rounded-24 overflow-hidden mb-6 horizontal-card-shadow">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A stunning underwater close-up of vibrant coral reefs in crystal clear Mauritian water, with schools of colorful tropical fish darting through the light rays. The water is a brilliant turquoise, and the lighting is bright and natural. The overall style is high-end, clean, and minimalist, emphasizing the pristine beauty of the natural environment." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBzfLhv-qPKEiwRnij_7YnYM5CFnyJhxVshWCQj3Wx759bm4f2qdlfIih11OFel07SUP4TSvAApAPWdtCXbA_d8X7ZMKFAu8nA7ZNr9IYfu4pyyt_BJmsdQcG116dM1TxSKIuIlf3SXHvOrVar1QQ2R7LoLwa_IWSnun_LHlZWjs37vB-22Iiwp-Kou4iDCkBEZYIz6AxMtJSUU_BI5oEHvNFDEuHbFrKKriWly40i663GdNMbURk0Y')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="font-headline-md text-headline-md text-white">Snorkeling</h3>
+<p class="text-white/80 font-label-caps text-label-caps mt-2">Lagoon Exploration</p>
+</div>
+</div>
+</div>
+<!-- Scuba Diving -->
+<div class="flex-none w-[85vw] md:w-[450px] snap-start group">
+<div class="relative h-[600px] rounded-24 overflow-hidden mb-6 horizontal-card-shadow">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A professional scuba diver suspended in a deep blue oceanic abyss near a spectacular underwater cliff edge in Mauritius. Beams of sunlight pierce the water from above, creating a dramatic and serene atmosphere. The color palette focuses on deep navy and vibrant teals, maintaining a luxury editorial travel aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCslivXOtH_0Hs3qjYzvsVd8uB_qM5-9ke6Mr30iVmmwvoqtiiEiDKne_mSl1SBl9QYeNB0DOigTCp09h5N7ozTHR9TucdQc4ocXJfVZhcbN8lIZC7umTp2NOUWnhay3cFBFrGE7gmBdu-scAfnF_KG8xYMInSjNwBMsOIAs7fh3E883uZ-enFligwZ5Li-QRmSdDsVGv2TYonTjQJGkG3-LYYcAz0R6naxF6N-_JarpWFkZUXGDL4v')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="font-headline-md text-headline-md text-white">Scuba Diving</h3>
+<p class="text-white/80 font-label-caps text-label-caps mt-2">Oceanic Depths</p>
+</div>
+</div>
+</div>
+<!-- Island Tours -->
+<div class="flex-none w-[85vw] md:w-[450px] snap-start group">
+<div class="relative h-[600px] rounded-24 overflow-hidden mb-6 horizontal-card-shadow">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="An aerial bento-style view of the Seven Coloured Earths in Chamarel, Mauritius, showing the unique undulating dunes of multicolored sand surrounded by lush tropical greenery. The morning light is soft and golden, highlighting the rich purples, reds, and browns of the landscape. The shot is minimalist and expansive, evoking a sense of ancient natural wonder." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC3FCSJMPl1Jf6vh0j0Llb1C81hVgEWvMiboocPH4bR8SXQF-56r99QtRy8XozOyh-Yb8s0i16jtyHu3OKPf-GeY0qr9TuhUjO93tCJda9biA8V639g19rDajwB0vjgxhTkqOP-LC0VC9Hzcb-sewY4RHvtNqfGvjEhjtt_mZRIkbQC6rhWTRrLioSNxG8o_CcTajCtTpcwpTIWXeaE31Y4Hz7Qt_xCEam87AgJ4-wAjghRXr5NkGjm')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="font-headline-md text-headline-md text-white">Island Tours</h3>
+<p class="text-white/80 font-label-caps text-label-caps mt-2">Cultural Heritage</p>
+</div>
+</div>
+</div>
+<!-- Catamaran Cruise -->
+<div class="flex-none w-[85vw] md:w-[450px] snap-start group">
+<div class="relative h-[600px] rounded-24 overflow-hidden mb-6 horizontal-card-shadow">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A luxury catamaran deck at sunset, with elegant white cushions and a glass of chilled champagne reflecting the orange and pink sky. In the background, the silhouette of Le Morne Brabant mountain rises from the sea. The lighting is romantic and warm, with a high-end lifestyle photography feel and a serene, opulent mood." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBQpcUTGmoC53mUCXuyCnpeEwD-wzXT9T4SF2Ydg_GCD9xNbZmZcGKYoOb3LTjjxUu7xj4H60BR05gZ06jC5QlhCwx9sEevogvT9vz8iy5zImauaJ0y75Se1WUUDUApRymOZutI_EfSR2DBLEC0M4nKxxiKoYfDBp_v8ozQM74Nk6fLgwGlJjZCLOSU-PB1sIoVf7ISlq1PPZSR8ahtZXFl-ZJm65l2r7CQitwmohOfiQCcIe3cgYRo')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="font-headline-md text-headline-md text-white">Catamaran Cruise</h3>
+<p class="text-white/80 font-label-caps text-label-caps mt-2">Sunset Sailing</p>
+</div>
+</div>
+</div>
+<!-- Golf -->
+<div class="flex-none w-[85vw] md:w-[450px] snap-start group">
+<div class="relative h-[600px] rounded-24 overflow-hidden mb-6 horizontal-card-shadow">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A pristine, lush green golf course in Mauritius bordering the turquoise sea. Palm trees sway gently in the breeze, and the morning light creates long, elegant shadows across the fairway. The scene is perfectly manicured and peaceful, capturing the essence of a high-end tropical sports sanctuary with a minimalist, clean aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBr9GC-2gkYwZgofb0kCXsFAgPTpUe7aK6MrWWaFEi4EvvrjKXBGnTB9ME-eHADaRqJBnuasYSKXl6C_TbnvLmYHFiN2da97RqmI0U-f_U1gcDFZuGB73tAd1zrYngSf3bG-kwNVo68LlQ2Q61JVCyFRonnXkpeOhE2qh1dUOEZB-y6Vll2UJru7LLrAsJl3_RnW3uxJJ6dFrDbxdJpqL58TgKZNRi8SFvF5oHs4_4OFDaURWz-Or9O')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="font-headline-md text-headline-md text-white">Championship Golf</h3>
+<p class="text-white/80 font-label-caps text-label-caps mt-2">World-class Greens</p>
+</div>
+</div>
+</div>
+<!-- Sunset Walks -->
+<div class="flex-none w-[85vw] md:w-[450px] snap-start group">
+<div class="relative h-[600px] rounded-24 overflow-hidden mb-6 horizontal-card-shadow">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A wide-angle, minimalist photograph of a couple walking along a white sand beach at dusk. The sky is a gradient of soft lilac and deep indigo, and the water is calm and reflective. The lighting is low-key and atmospheric, focusing on the quiet intimacy of the moment within a vast, serene coastal environment." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDn_l93Hm7-jsivy9_0pEN6-8s03QjJIy5cpHxagXNqNrOjgd7pSnhY36htiy3vZ-Eig9hHB66tw68BbyWHhEQ-IkugvjdHXO4gfvw4hUYB9pcnrUoGyCncOTi5YbICa62CDlkiH33s-7NtD7oYMME_ViU2Bw_sFiLeOVwhgDlc5fUWSqaaFMtx_b3HwzDzEgxnSfEw_fvZ59FIu-yREXRttxiToANr-1L89PsrumZlah6i9TBlIbkO')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="font-headline-md text-headline-md text-white">Sunset Walks</h3>
+<p class="text-white/80 font-label-caps text-label-caps mt-2">Coastal Quietude</p>
+</div>
+</div>
+</div>
+<!-- Mauritian Cuisine -->
+<div class="flex-none w-[85vw] md:w-[450px] snap-start group">
+<div class="relative h-[600px] rounded-24 overflow-hidden mb-6 horizontal-card-shadow">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A top-down editorial food photograph of authentic Mauritian Creole dishes served on handcrafted ceramic plates. Bright tropical garnishes, vibrant curries, and fresh seafood are arranged artistically on a rustic wooden table. The lighting is soft and natural, emphasizing textures and rich, organic colors in a high-end culinary style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDtYAxoZ1GDKDcRMUYjBs_gn3xhGJYCiusgsCFNnHfwpOKTBbydYHjL53a1C-7VZwDM4AIHrmtUH2vVo423GSz9bJXcCC9KWV-L6ojSgKbrfrmt8FP_7ql775-H8u4w4JDEZ_frojFOu6HC-ekWQeFRbRzcYRug0hEhiLJm7nSkDyOkEyG5-Ipc3B-QMDKBDWoUkZZjQWGJ9_9KB55YWHqxHMQYsOp7jNcQDCXBk-OtCgxTqm5fjH0d')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="font-headline-md text-headline-md text-white">Creole Gastronomy</h3>
+<p class="text-white/80 font-label-caps text-label-caps mt-2">Authentic Flavors</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Itinerary Section -->
+<section class="bg-surface-container-low py-section-gap">
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-24">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase block mb-4">Tailored Journeys</span>
+<h2 class="font-display-hero text-display-hero-mobile md:text-display-hero text-primary">Craft Your Escape</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-6">
+                    Whether a fleeting weekend or an extended sanctuary, let us map your perfect Mauritian narrative.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- 2 Day Escape -->
+<div class="glass-card rounded-24 p-12 transition-all hover:-translate-y-2">
+<div class="flex justify-between items-start mb-8">
+<span class="font-display-hero text-headline-lg text-primary/20">02</span>
+<div class="text-right">
+<h4 class="font-headline-md text-[24px] text-primary">The Weekender</h4>
+<p class="font-label-caps text-[10px] text-secondary">ESSENTIALS</p>
+</div>
+</div>
+<ul class="space-y-6">
+<li class="flex gap-4">
+<span class="font-bold text-primary">01</span>
+<p class="font-body-md text-on-surface-variant">Arrival &amp; Beachside Gastronomy at Sunset</p>
+</li>
+<li class="flex gap-4">
+<span class="font-bold text-primary">02</span>
+<p class="font-body-md text-on-surface-variant">North Island Sailing &amp; Lagoon Snorkeling</p>
+</li>
+</ul>
+<button class="mt-12 w-full border border-primary text-primary py-4 rounded-full font-label-caps uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all">Explore Path</button>
+</div>
+<!-- 4 Day Escape -->
+<div class="bg-primary-container text-on-primary-container rounded-24 p-12 shadow-xl md:-mt-8 transition-all hover:-translate-y-2">
+<div class="flex justify-between items-start mb-8">
+<span class="font-display-hero text-headline-lg text-white/20">04</span>
+<div class="text-right">
+<h4 class="font-headline-md text-[24px] text-on-primary">Deep Immersion</h4>
+<p class="font-label-caps text-[10px] text-on-primary-container/60">MOST LOVED</p>
+</div>
+</div>
+<ul class="space-y-6">
+<li class="flex gap-4">
+<span class="font-bold text-white">01</span>
+<p class="font-body-md text-on-primary-container/80">Chamarel Dunes &amp; Tropical Rainforest Hike</p>
+</li>
+<li class="flex gap-4">
+<span class="font-bold text-white">02</span>
+<p class="font-body-md text-on-primary-container/80">Private Catamaran &amp; Ile aux Cerfs Lunch</p>
+</li>
+<li class="flex gap-4">
+<span class="font-bold text-white">03</span>
+<p class="font-body-md text-on-primary-container/80">Pamplemousses Gardens &amp; Port Louis Heritage</p>
+</li>
+<li class="flex gap-4">
+<span class="font-bold text-white">04</span>
+<p class="font-body-md text-on-primary-container/80">Le Morne Peak Sunrise &amp; Spa Sanctuary</p>
+</li>
+</ul>
+<button class="mt-12 w-full bg-on-primary-container text-primary-container py-4 rounded-full font-label-caps uppercase tracking-widest hover:opacity-90 transition-all">Select Journey</button>
+</div>
+<!-- 7 Day Escape -->
+<div class="glass-card rounded-24 p-12 transition-all hover:-translate-y-2">
+<div class="flex justify-between items-start mb-8">
+<span class="font-display-hero text-headline-lg text-primary/20">07</span>
+<div class="text-right">
+<h4 class="font-headline-md text-[24px] text-primary">Island Soul</h4>
+<p class="font-label-caps text-[10px] text-secondary">COMPLETE LUXURY</p>
+</div>
+</div>
+<ul class="space-y-6">
+<li class="flex gap-4">
+<span class="font-bold text-primary">01-03</span>
+<p class="font-body-md text-on-surface-variant">The Coastal Loop &amp; Private Lagoon Access</p>
+</li>
+<li class="flex gap-4">
+<span class="font-bold text-primary">04-05</span>
+<p class="font-body-md text-on-surface-variant">Heart of the Hinterlands: Tea &amp; Coffee Estates</p>
+</li>
+<li class="flex gap-4">
+<span class="font-bold text-primary">06-07</span>
+<p class="font-body-md text-on-surface-variant">Culinary Masterclasses &amp; Deep Sea Expeditions</p>
+</li>
+</ul>
+<button class="mt-12 w-full border border-primary text-primary py-4 rounded-full font-label-caps uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all">Explore Path</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="relative py-section-gap overflow-hidden">
+<div class="absolute inset-0 bg-primary z-0"></div>
+
+<div class="relative z-10 px-margin-desktop text-center max-w-4xl mx-auto text-on-primary">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-8 italic">Ready to write your story?</h2>
+<p class="font-body-lg text-body-lg mb-12 opacity-80">Our concierge is at your service to personalize every detail of your Mauritian escape.</p>
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+<button class="bg-secondary-container text-on-secondary-container px-12 py-5 rounded-full font-label-caps uppercase tracking-widest hover:scale-105 transition-transform">Inquire Now</button>
+<button class="border border-white/30 backdrop-blur-sm px-12 py-5 rounded-full font-label-caps uppercase tracking-widest hover:bg-white/10 transition-all">Download Brochure</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-primary border-t border-outline-variant/10 w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-section-gap px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="md:col-span-2">
+<h3 class="font-display-hero text-display-hero-mobile text-primary mb-8">Cazhibiscus</h3>
+<p class="text-on-surface-variant max-w-md font-body-md">A boutique sanctuary in the heart of Mauritius, blending colonial charm with modern tropical luxury. Experience the soul of the island with us.</p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-6">Discover</h4>
+<div class="flex flex-col gap-4">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Sustainability</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Careers</a>
+</div>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-6">Social</h4>
+<div class="flex flex-col gap-4">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Instagram</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Facebook</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">LinkedIn</a>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop py-8 border-t border-outline-variant/5 text-center">
+<p class="font-body-md text-body-md text-on-surface-variant opacity-60">© 2024 Cazhibiscus Boutique B&amp;B Mauritius. All rights reserved.</p>
+</div>
+</footer>
+<!-- Bottom Navigation for Mobile -->
+<nav class="fixed bottom-0 w-full rounded-t-xl z-50 md:hidden bg-surface/90 dark:bg-primary/90 backdrop-blur-lg border-t border-outline-variant/30 shadow-[0_-4px_20px_rgba(14,79,91,0.08)] flex justify-around items-center h-20 pb-safe px-6">
+<a class="flex flex-col items-center gap-1 text-outline tap-highlight-none" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-caps text-[10px]">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary font-bold tap-highlight-none" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">sailing</span>
+<span class="font-label-caps text-[10px]">Explore</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-outline tap-highlight-none" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-caps text-[10px]">Account</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-outline tap-highlight-none" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="font-label-caps text-[10px]">Book</span>
+</a>
+</nav>
+<script>
+        const scrollContainer = document.getElementById('experience-scroll');
+        
+        function scrollLeftExp() {
+            scrollContainer.scrollBy({ left: -450, behavior: 'smooth' });
+        }
+        
+        function scrollRightExp() {
+            scrollContainer.scrollBy({ left: 450, behavior: 'smooth' });
+        }
+
+        // Parallax effect for hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroImage = document.querySelector('header div[style*="background-image"]');
+            if (heroImage) {
+                heroImage.style.transform = `translateY(${scrolled * 0.3}px) scale(1.05)`;
+            }
+        });
+    </script>
+</body></html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rooms & Suites | Cazhibiscus Boutique B&B</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@500;600&family=Manrope:wght@500;700&family=EB+Garamond:wght@400&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@100..900&family=Inter:wght@100..900&family=Manrope:wght@100..900&family=Playfair+Display:wght@100..900&display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .text-gradient {
+            background: linear-gradient(to bottom, #003741, #0e4f5b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .sticky-cta-shadow {
+            box-shadow: 0 -10px 40px rgba(14, 79, 91, 0.1);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "error": "#ba1a1a",
+                      "secondary-fixed": "#9cefff",
+                      "tertiary-fixed-dim": "#d0c5b0",
+                      "tertiary-container": "#4e4737",
+                      "on-secondary-fixed-variant": "#004f58",
+                      "surface": "#f8f9fa",
+                      "outline": "#70787b",
+                      "on-secondary-container": "#006b78",
+                      "secondary-fixed-dim": "#72d5e6",
+                      "surface-container-low": "#f3f4f4",
+                      "surface-dim": "#d9dadb",
+                      "on-primary-fixed": "#001f25",
+                      "surface-bright": "#f8f9fa",
+                      "primary-fixed-dim": "#98cfdd",
+                      "inverse-on-surface": "#f0f1f1",
+                      "on-primary": "#ffffff",
+                      "on-surface-variant": "#40484a",
+                      "tertiary-fixed": "#ede1cb",
+                      "tertiary": "#373122",
+                      "surface-tint": "#2d6672",
+                      "on-error": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-fixed-variant": "#4d4636",
+                      "secondary-container": "#8aebfd",
+                      "on-tertiary-fixed": "#201b0e",
+                      "surface-container-lowest": "#ffffff",
+                      "outline-variant": "#bfc8ca",
+                      "inverse-surface": "#2e3132",
+                      "surface-container": "#edeeef",
+                      "error-container": "#ffdad6",
+                      "on-primary-fixed-variant": "#0c4e5a",
+                      "on-secondary-fixed": "#001f24",
+                      "primary": "#003741",
+                      "on-secondary": "#ffffff",
+                      "primary-container": "#0e4f5b",
+                      "surface-container-highest": "#e1e3e3",
+                      "primary-fixed": "#b3ecfa",
+                      "background": "#f8f9fa",
+                      "on-surface": "#191c1d",
+                      "inverse-primary": "#98cfdd",
+                      "on-background": "#191c1d",
+                      "secondary": "#006875",
+                      "on-primary-container": "#88bfcd",
+                      "on-error-container": "#93000a",
+                      "surface-container-high": "#e7e8e9",
+                      "on-tertiary-container": "#c0b5a1",
+                      "surface-variant": "#e1e3e3"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "24px",
+                      "section-gap": "120px",
+                      "unit": "8px",
+                      "margin-desktop": "64px",
+                      "container-max": "1440px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Inter"],
+                      "headline-md": ["Playfair Display"],
+                      "nav-link": ["Manrope"],
+                      "body-md": ["Inter"],
+                      "headline-lg-mobile": ["Playfair Display"],
+                      "headline-lg": ["Playfair Display"],
+                      "display-hero": ["EB Garamond"],
+                      "label-caps": ["Manrope"],
+                      "display-hero-mobile": ["EB Garamond"]
+              },
+              "fontSize": {
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                      "nav-link": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "600"}],
+                      "display-hero": ["80px", {"lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                      "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                      "display-hero-mobile": ["48px", {"lineHeight": "54px", "letterSpacing": "-0.01em", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top Navigation -->
+<header class="bg-surface/80 dark:bg-primary/80 backdrop-blur-xl docked full-width top-0 z-50 border-b border-outline-variant/20 shadow-sm fixed w-full">
+<nav class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-medium text-primary dark:text-primary-fixed">Cazhibiscus</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-nav-link text-nav-link uppercase tracking-widest text-primary dark:text-primary-fixed border-b border-primary" href="#">Rooms</a>
+<a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Gallery</a>
+<a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Experiences</a>
+<a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">About</a>
+<a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="px-8 py-3 bg-primary-container text-on-primary-container font-nav-link text-nav-link uppercase tracking-widest rounded-full hover:bg-primary transition-all duration-300 scale-95 active:scale-90">
+                Book Now
+            </button>
+</nav>
+</header>
+<main class="pt-32 pb-section-gap">
+<!-- Hero Section -->
+<section class="px-margin-desktop max-w-container-max mx-auto mb-20">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-outline-variant/30 pb-12">
+<div class="max-w-2xl">
+<span class="font-label-caps text-label-caps text-primary tracking-[0.2em] mb-4 block">LUXURY ACCOMMODATION</span>
+<h1 class="font-display-hero text-display-hero text-primary leading-tight">Private Sanctuaries <br/>& Suites</h1>
+</div>
+<div class="max-w-sm">
+<p class="font-body-lg text-body-lg text-on-surface-variant italic">
+                        "Where the precision of high-end design meets the rhythmic pulse of Mauritian coastal life."
+                    </p>
+</div>
+</div>
+</section>
+<!-- Kitchenette Suites (Bento Highlight) -->
+<section class="px-margin-desktop max-w-container-max mx-auto mb-section-gap">
+<div class="flex items-center gap-4 mb-12">
+<h2 class="font-headline-lg text-headline-lg text-primary">Kitchenette Suites</h2>
+<div class="h-[1px] flex-grow bg-outline-variant/30"></div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">SELF-CATERING FREEDOM</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Large Feature Card -->
+<div class="md:col-span-8 group cursor-pointer overflow-hidden rounded-[24px] relative aspect-[16/9]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="An expansive, sun-drenched luxury suite in Mauritius with a minimalist modern kitchenette featuring high-end dark teal cabinetry and warm wood accents. The room is flooded with soft natural light from floor-to-ceiling windows that reveal a glimpse of lush tropical greenery. The furniture is high-end Apple-inspired minimalism with clean lines and soft grey fabrics, creating a serene, sanctuary-like atmosphere with a deep ocean blue and warm sand color palette." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBmejxgVUwtwXR79RJirg82mbbbWjFhOFQf-ohrDkcgsRwsTaNr3M8BJ7NdFLocn1Gw1fDrpBQLflUoWhommzZkMKZrAIsZq1D-vCpEFrF7zJguMh8CgTOXLyDIKrwJnJNkPiUfSBPvZZq5g4M_TMtrtFcPZgj9AFhOyYlrkpIB0Pq_duI8H87cJMzLBNrQeyVruT0U4VBPhqniAvLqJrWiy-9odCSbDk1OFqOKeH0uD5o63oLED24r')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-0 left-0 p-10 w-full flex justify-between items-end">
+<div>
+<h3 class="font-headline-md text-headline-md text-white mb-2">The Azure Grand Suite</h3>
+<div class="flex gap-4 text-white/90 font-label-caps text-label-caps">
+<span>650 SQ FT</span>
+<span>•</span>
+<span>OCEAN VIEW BALCONY</span>
+</div>
+</div>
+<div class="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20">
+<span class="material-symbols-outlined text-white text-3xl">chef_hat</span>
+</div>
+</div>
+</div>
+<!-- Vertical Detail Card -->
+<div class="md:col-span-4 glass-card p-10 rounded-[24px] flex flex-col justify-between">
+<div>
+<h4 class="font-nav-link text-nav-link uppercase text-primary mb-6 tracking-widest">Premium Amenities</h4>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="coffee_maker">coffee_maker</span>
+<div>
+<p class="font-label-caps text-label-caps text-primary mb-1">NESPRESSO STATION</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Signature blend pods included daily.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="restaurant">restaurant</span>
+<div>
+<p class="font-label-caps text-label-caps text-primary mb-1">GOURMET KITCHENETTE</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Induction stove, premium cookware, and organic spices.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="wifi">wifi</span>
+<div>
+<p class="font-label-caps text-label-caps text-primary mb-1">HYPER-FAST WIFI</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Dedicated 1Gbps line for seamless digital nomad life.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="pt-8">
+<button class="w-full py-4 border border-primary text-primary font-nav-link text-nav-link uppercase tracking-widest rounded-full hover:bg-primary hover:text-white transition-all">View Floor Plan</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Garden View Rooms (Asymmetric Grid) -->
+<section class="bg-surface-container-low py-section-gap">
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<div class="mb-16">
+<span class="font-label-caps text-label-caps text-primary tracking-[0.2em] mb-4 block">TROPICAL IMMERSION</span>
+<h2 class="font-headline-lg text-headline-lg text-primary max-w-xl">Garden View Sanctuaries</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="aspect-[4/5] rounded-[24px] overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A tranquil garden view bedroom at a boutique hotel in Mauritius. The room features high ceilings with exposed white-washed wooden beams and a king-sized bed with crisp white linens. Large sliding glass doors open directly onto a private tropical garden terrace lush with hibiscus and palm trees. The interior design is minimal and editorial, using a sophisticated palette of deep teal, sage green, and warm sand. Soft, dappled sunlight filters through the foliage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6K6uSCs-lZuI5aCBROqJK9PUYXzNfjX-CfGuE43uGheF6Mu0zRxcEGk0KCrktZ8SI-kn8MJg9gi-yfbm-lk_b__fJYT2VZ77wh64-xtUxoRap5ZEaXvQTcFW1ox9Rx8xNFy7ghJXwhv7RK88Gf9GM5qIDPVUuqox9DU86v7pQkNO6iQG7jQSeQtyVAWypUjV7Wjq7gQZjHA7mbF0JtSYPrTqyZtc53noSSPDBQKOLLfwyg2HzGQP-"/>
+</div>
+<div class="absolute -bottom-10 -right-10 hidden lg:block w-64 glass-card p-6 rounded-2xl shadow-xl border border-white/50">
+<p class="font-body-md text-body-md text-primary italic mb-2">"The morning light through the palms is transformative."</p>
+<p class="font-label-caps text-label-caps text-on-surface-variant">— SOPHIA, UK</p>
+</div>
+</div>
+<div class="space-y-10">
+<div class="flex flex-col gap-6">
+<h3 class="font-headline-md text-headline-md text-primary">Hibiscus Garden Room</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                                Seamlessly blending indoor comfort with the vibrant outdoors, our Garden Rooms offer a private terrace surrounded by exotic Mauritian flora. Perfect for those seeking quietude and a direct connection to nature.
+                            </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface p-4 rounded-xl">
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-1">SIZE</p>
+<p class="font-body-md text-body-md font-bold text-primary">420 SQ FT</p>
+</div>
+<div class="bg-surface p-4 rounded-xl">
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-1">OCCUPANCY</p>
+<p class="font-body-md text-body-md font-bold text-primary">2 ADULTS</p>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-3">
+<span class="px-5 py-2 bg-white rounded-full font-label-caps text-[10px] text-primary border border-outline-variant/30">KING BED</span>
+<span class="px-5 py-2 bg-white rounded-full font-label-caps text-[10px] text-primary border border-outline-variant/30">PRIVATE TERRACE</span>
+<span class="px-5 py-2 bg-white rounded-full font-label-caps text-[10px] text-primary border border-outline-variant/30">RAIN SHOWER</span>
+<span class="px-5 py-2 bg-white rounded-full font-label-caps text-[10px] text-primary border border-outline-variant/30">MINI BAR</span>
+</div>
+<button class="flex items-center gap-4 text-primary font-nav-link text-nav-link uppercase tracking-[0.2em] group">
+<span>Explore Room Details</span>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Double Rooms (Editorial Showcase) -->
+<section class="px-margin-desktop max-w-container-max mx-auto mt-section-gap">
+<div class="text-center mb-20">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Standard Double Rooms</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    Essential luxury for the discerning traveler. Compact yet thoughtfully designed with every modern convenience.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group">
+<div class="aspect-square overflow-hidden rounded-[24px] mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A minimalist boutique hotel double room in Mauritius. The design features a palette of cool whites and deep navy blues. A modern desk area sits by a large window overlooking a coastal village scene. The lighting is soft and environmental, highlighting textures like linen curtains and stone floors. High-end editorial travel magazine aesthetic with expansive whitespace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyRHrKlkVEYUxIRWxf4wCdNlWbhsxkd7YMtaa_eVcWDNPNeqa2bQEJ-c6FWi09X3KeETlvb4h0oS-ARMsNMG54QgDepzbofCOvwPrPvFEmUIwB5jg2vbY0jn3TKWHLG1Vd-Rd69qY6vUr5Fcd94FFCDrXAPCaMeujuGsRvO_oTVbnhYtKlP3LoJSXJvNoKuaLErM4UDuRGsk9R3tyl0OKi_heMnUXVwxuCkuNKQ5QhBIRCMViI7dY1"/>
+<div class="absolute top-6 right-6 bg-white/80 backdrop-blur-md px-4 py-2 rounded-full font-label-caps text-[10px] text-primary">FROM $180/NT</div>
+</div>
+<h3 class="font-headline-md text-[24px] text-primary mb-2">Village View Double</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Authentic local perspectives and morning sun.</p>
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined text-xl">square_foot</span>
+<span class="font-label-caps text-[11px]">310 SQ FT</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group">
+<div class="aspect-square overflow-hidden rounded-[24px] mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A luxury double room interior with a focus on high-end tech integration and comfort. A sleek smart TV is recessed into a warm wood paneled wall. The bedding is plush and layered with different shades of ocean blue and sand. A small, elegant balcony with two chairs overlooks a quiet pool area. The atmosphere is quiet and sophisticated, illuminated by warm designer bedside lamps." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtwzSt2YLChZWZ-gtyaqDZjgDD9yGwqfej_BWigdgOrraaVdxAXZK8adASpm4XqVT7ApG7HBPGEV6x7tOh8Wy-mW2RG9TYOZD_Qlf3KodPOc9APaRwzNY4AzG9P_UPGOeLhdu-sDIYyw5E4nZt3WpxRW2AU9diijCmKt4iNu28TRAR4oJrbKxkMCmSEuVoY5Btc_7dRiNzYumF4nOKwElyNw33CqvLQqYIkkg4jkW7C9ryHsgn-_he"/>
+<div class="absolute top-6 right-6 bg-white/80 backdrop-blur-md px-4 py-2 rounded-full font-label-caps text-[10px] text-primary">FROM $210/NT</div>
+</div>
+<h3 class="font-headline-md text-[24px] text-primary mb-2">Poolside Double</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Immediate access to the sanctuary waters.</p>
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined text-xl">square_foot</span>
+<span class="font-label-caps text-[11px]">340 SQ FT</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group">
+<div class="aspect-square overflow-hidden rounded-[24px] mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A sophisticated loft-style double room in a boutique Mauritian hotel. High ceilings and a large circular window create a unique architectural feel. The furniture is a mix of custom dark wood and light upholstery. Soft, moody lighting creates an intimate evening atmosphere. The style is understated opulence, emphasizing high-quality materials and silence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXZFYZTrIgcepgad_jPMWj_NMsWr7JIgFEW_zdeSKa3_bS3RX82TqJzIPEqtcMoPlWwSfptOP8XhRJXUNpz8Tixdv-U2y3ydxPRKYwfXFoi-Fmb-e-80EijGOQte4hMmC1tUcxKLtvL6kBFkTRsWMcrs0rMLj3lCnP9nP134abKtUxtawPvsr3YFaBCw8wnqqvkLLYuJdbtN1LSmk78nEGqu6YRz0PByv86OTsNF13JymadXckDa3M"/>
+<div class="absolute top-6 right-6 bg-white/80 backdrop-blur-md px-4 py-2 rounded-full font-label-caps text-[10px] text-primary">FROM $240/NT</div>
+</div>
+<h3 class="font-headline-md text-[24px] text-primary mb-2">Sky Loft Double</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Elevated privacy with panoramic sky views.</p>
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined text-xl">square_foot</span>
+<span class="font-label-caps text-[11px]">380 SQ FT</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Sticky Reserve CTA -->
+<div class="fixed bottom-0 left-0 w-full z-[60] px-6 pb-6 md:pb-8 pointer-events-none">
+<div class="max-w-4xl mx-auto glass-card rounded-[32px] p-4 flex flex-col md:flex-row items-center justify-between gap-4 sticky-cta-shadow pointer-events-auto">
+<div class="flex items-center gap-6 px-4">
+<div class="hidden sm:block">
+<p class="font-label-caps text-[10px] text-on-surface-variant mb-1">CURRENTLY VIEWING</p>
+<p class="font-nav-link text-nav-link text-primary font-bold">ALL ROOMS & SUITES</p>
+</div>
+<div class="h-8 w-[1px] bg-outline-variant/30 hidden sm:block"></div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span class="font-label-caps text-[11px] text-primary">SELECT DATES TO SEE AVAILABILITY</span>
+</div>
+</div>
+<button class="w-full md:w-auto px-10 py-4 bg-primary text-white font-nav-link text-nav-link uppercase tracking-widest rounded-full hover:bg-primary-container hover:text-on-primary-container transition-all shadow-lg">
+                Reserve Your Stay
+            </button>
+</div>
+</div>
+<!-- Mobile Bottom Nav -->
+<nav class="fixed bottom-0 w-full rounded-t-xl z-50 md:hidden bg-surface/90 dark:bg-primary/90 backdrop-blur-lg border-t border-outline-variant/30 shadow-[0_-4px_20px_rgba(14,79,91,0.08)] flex justify-around items-center h-20 pb-safe px-6">
+<a class="flex flex-col items-center gap-1 text-outline transition-all tap-highlight-none" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-caps text-[10px]">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary font-bold transition-all tap-highlight-none" href="#">
+<span class="material-symbols-outlined">hotel</span>
+<span class="font-label-caps text-[10px]">Rooms</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-outline transition-all tap-highlight-none" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">sailing</span>
+<span class="font-label-caps text-[10px]">Explore</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-outline transition-all tap-highlight-none" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-caps text-[10px]">Account</span>
+</a>
+</nav>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-primary border-t border-outline-variant/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-section-gap px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="md:col-span-2">
+<div class="font-display-hero text-display-hero-mobile text-primary mb-8">Cazhibiscus</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+                    An editorial vision of Mauritian luxury. We offer a sanctuary for those who seek the authentic, the quiet, and the beautifully designed.
+                </p>
+</div>
+<div>
+<h5 class="font-label-caps text-label-caps text-primary mb-6">EXPLORE</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-opacity" href="#">Sustainability</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-opacity" href="#">Local Guide</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-opacity" href="#">Gift Vouchers</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-opacity" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-caps text-label-caps text-primary mb-6">LEGAL</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-opacity" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-opacity" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="px-margin-desktop py-8 border-t border-outline-variant/10 max-w-container-max mx-auto flex justify-between items-center">
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">© 2024 Cazhibiscus Boutique B&B Mauritius. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">face_nod</span></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">camera</span></a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll interaction for the sticky CTA
+        let lastScroll = 0;
+        const stickyCta = document.querySelector('.sticky-cta-shadow').parentElement;
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll > lastScroll && currentScroll > 300) {
+                stickyCta.style.transform = 'translateY(100px)';
+                stickyCta.style.transition = 'transform 0.4s ease-in-out';
+            } else {
+                stickyCta.style.transform = 'translateY(0)';
+            }
+            lastScroll = currentScroll;
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body></html>
